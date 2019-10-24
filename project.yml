@@ -1,0 +1,37 @@
+# This file uses following tool: https://github.com/yonaskolb/XcodeGen
+# See specifications here https://github.com/yonaskolb/XcodeGen/blob/master/Docs/ProjectSpec.md
+
+options:
+  deploymentTarget:
+    iOS: "12.0"
+  createIntermediateGroups: true
+  usesTabs: false
+  indentWidth: 3
+  tabWidth: 3
+
+attributes:
+   ORGANIZATIONNAME: Microcoding
+   LastUpgradeCheck: "1110"
+
+name: XcodeGen-vs-Local-Swift-Packages
+
+packages:
+  Down:
+    url: https://github.com/iwasrobbed/Down.git
+    version: 0.9.0
+
+targets:
+
+  XcodeGen-vs-Local-Swift-Packages:
+    type: application
+    platform: iOS
+    settings:
+      INFOPLIST_FILE: Info.plist
+      TARGETED_DEVICE_FAMILY: 1
+      PRODUCT_BUNDLE_IDENTIFIER: com.dev.XcodeGen-vs-Local-Swift-Packages
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    sources:
+       - Sources
+       - Resources
+    dependencies:
+      - package: Down
