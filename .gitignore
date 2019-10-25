@@ -22,8 +22,8 @@ xcuserdata/
 *.profraw
 
 # XgodeGen
-/*.xcworkspace
-/*.xcodeproj
+*.xcworkspace
+*.xcodeproj
 
 ## Other
 *.moved-aside

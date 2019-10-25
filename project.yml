@@ -20,6 +20,9 @@ packages:
     url: https://github.com/iwasrobbed/Down.git
     version: 0.9.0
 
+localPackages:
+  - ./Reusable
+
 targets:
 
   XcodeGen-vs-Local-Swift-Packages:
